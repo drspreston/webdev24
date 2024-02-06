@@ -39,3 +39,8 @@ console.log(y);     //16
 
 console.log(++y);   //17
 console.log(y);     //17
+
+
+x = "5";
+y = "2";
+console.log("x + y = " + (x+y));
