@@ -1,5 +1,19 @@
+/*
+Author: Silvia Preston
+Date: 2/7/2024
+File name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
 body {
-    background-color: #ccc;
+    background-color: #000;
 }
 
 img{
@@ -7,11 +21,13 @@ img{
     display: block;
 }
 
+/* Style rule for header */
 header {
     width: 25%;
     float: left;
 }
 
+/* Style rules for navigation area */
 nav {
     width:70%;
     float: right;
@@ -26,7 +42,9 @@ nav ul {
 
 nav li {
     display: inline-block;
-    font-size: 1.75em;
+    font-size: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
 }
 
 nav li a {
@@ -37,6 +55,7 @@ nav li a {
     text-decoration: none;
 }
 
+/* Style rules for main content */
 main {
     clear: left;
     background-color: #fff;
@@ -87,6 +106,11 @@ main {
     text-decoration: none;
 }
 
+.map {
+    border: 8px solid #000;
+}
+
+/* Style rules for footer content */
 footer p {
     font-size: 0.75em;
     text-align: center;
