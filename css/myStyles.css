@@ -1,0 +1,64 @@
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* padding: 0% 10%; */
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color:#333;    
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Style rules for navigation area */
+nav {
+    /* padding: 0% 30%; */ /*for smaller nav*/
+    padding: 0%;
+    margin-bottom: 1%;    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    border-top: 1px solid #fff;
+    background-color: burlywood;
+}
+
+nav li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 20px;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
