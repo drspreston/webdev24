@@ -24,6 +24,7 @@ header {
     padding: 5%;
     text-align: center;
     height: 120px;
+    background-color: coral;
 }
 
 header h1 {    
