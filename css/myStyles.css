@@ -16,6 +16,10 @@ img{
     display: block;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Begin style rules for mobile viewport */
 
 /* Style rule for header */
@@ -57,7 +61,7 @@ nav li a {
     display: block;
     color: #fff;
     padding: 0.5em 1em;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 /* Show mobile class, hide tablet-desktop class */ 
@@ -104,9 +108,9 @@ footer {
     font-family: "Roboto Slab", serif;
 }
 
-footer p a {
+/* footer p a {
     text-decoration: none;
-}
+} */
 
 /* Media query for tablet viewport */
 @media screen and (min-width: 630px), print       /* 630px is the starting breakpoint */
