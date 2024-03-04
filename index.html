@@ -4,35 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silvia's Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    
+    <title>Silvia's Preston</title>
     <link rel="stylesheet" href="css/myStyles.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1>Webdev Course Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="clientSide/index.html">Client-Side</a></li>
-            <li><a href="fitnessClub/index.html">Fitness Club</a></li>
-        </ul>
-    </nav>
+    <div id="container">
+        <!--Header -->
+        <header>
+            <h1>Webdev - Website Development</h1>
+        </header>
 
-    <main>
-        <!-- Your main content goes here -->
-        <section id="home">
-            <h1>Welcome to the Webdev 2024 Website</h1>
-            <p><a href="yourturn/index.html">Your Turn Assignments</a></p>
-        </section>        
-        <!-- Add more sections as needed -->
-    </main>
+        <!--Navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clientSide/index.html">Client-Side</a></li>
+                <li><a href="fitnessClub/index.html">Fitness Club</a></li>
+            </ul>
+        </nav>
 
-    <footer>
-        <p>&copy; 2024 Silvia Preston. All rights reserved.</p>
-    </footer>  
+        <main>
+            <!-- Websites -->
+            <h2>Chapter 5 Your Turn</h2>
+            <div id="portfolio">
+                <p>Portfolio</p>
+                <a href="portfolio/index.html" target="_blank"><img src="images/porfolio_MariaCruz.png" alt="Maria Cruz"
+                        class="round"></a>
+                <p>This is a suggested solution for the Portfolio website in chapter 5.</p>
+            </div>
+           
+            <hr class="mobile" />
 
+            <div id="grooming">
+                <p>Pet Grooming</p>
+                <a href="groom/index.html" target="_blank"> <img src="images/grooming_website.png" alt="Pet Grooming"
+                        class="round" ></a>
+                <p>This is a suggested solution for the Grooming website in chapter 5.</p>
+            </div>
+
+            <hr class="mobile" />
+
+            <div id="tech">
+                <p>Advancing Technologies</p>
+                <a href="tech/index.html" target="_blank"><img src="images/advancingTech_website.png" alt="Advancing Technologies"
+                        class="round" ></a>
+                    <p>This is a suggested solution for the Advancing Technologies website in chapter 5.</p>
+            </div>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <p>&copy; Silvia Preston 2024</p>
+            <p><a href="mailto:spreston@prcc.edu">spreston@prcc.edu</a></p>
+        </footer>
+    </div>
 </body>
-
 </html>

@@ -1,5 +1,5 @@
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul {
+body, header, nav, main, footer, h1, h2, div, img, ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -8,25 +8,33 @@ body, header, nav, main, footer, h1, div, img, ul {
 /* Style rules for body and images */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    /* padding: 0% 10%; */
+    background-color: #e6d8d8;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Begin style rules for mobile viewport */
+
+/* Style rule for header */
 header {
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
-    background-color:#333;    
+    padding: 5%;
     text-align: center;
-    color: #fff;
-    padding: 10px 0;
+    height: 120px;
+}
+
+header h1 {    
+    margin: 3%;
 }
 
 /* Style rules for navigation area */
 nav {
-    /* padding: 0% 30%; */ /*for smaller nav*/
-    padding: 0%;
-    margin-bottom: 1%;    
+    padding: 1%;
+    margin-bottom: 0%;
+    background-color: #000;
 }
 
 nav ul {
@@ -37,28 +45,185 @@ nav ul {
 
 nav li {
     font-size: 1.5em;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Francois One', sans-serif;
     border-top: 1px solid #fff;
-    background-color: burlywood;
+}
+
+nav li:first-child {
+    border-top: none;
 }
 
 nav li a {
     display: block;
-    color: #000;
-    text-align: center;
+    color: #fff;
     padding: 0.5em 1em;
     text-decoration: none;
 }
 
+/* Show mobile class, hide tablet-desktop class */ 
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
 /* Style rules for main content */
 main {
-    padding: 20px;
+    background-color: #c26060;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: "Roboto Slab", serif;
+}
+
+main h2 {
+    text-align: center;        
+}  
+
+main hr {
+    width: 100%;
+    line-height: 5%;
+}
+
+#portfolio, #grooming, #tech {
+    margin: 0 2%;
+}
+
+.round {
+    border-radius: 8px;
 }
 
 /* Style rules for footer content */
 footer {
+    font-size: 0.80em;
     text-align: center;
-    background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    background-color: #000;
+    padding: 1em;
+    font-family: "Roboto Slab", serif;
+}
+
+footer p a {
+    text-decoration: none;
+}
+
+/* Media query for tablet viewport */
+@media screen and (min-width: 630px), print       /* 630px is the starting breakpoint */
+{
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for header */
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.1em 0.75em;
+    }
+
+    /* Tablet Viewport: Style rules for main content area */ 
+    main {
+        margin-top: auto;
+    }
+    
+    main ul {
+        margin: 0 0 4% 10%;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print
+{
+    /* Desktop Viewport: Style rule for header */
+    header {
+        padding: 1%;
+    }
+
+    header h1 {    
+        margin: 2% 0 0;
+    }
+    
+    /* Desktop Viewport: Style rules for nav area */
+    nav {
+        width: 98%; 
+        margin-bottom: 0%;       
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        border-right: 1px solid #fff;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+    nav li a:hover{
+        color: #000;
+        background-color: #fff;
+    }
+
+    /* Desktop Viewport: Style Rules for main content */
+    main {
+        margin-top: auto;
+    }     
+
+    main::after {
+        content: "";
+        clear: both;
+        display: flex;
+    }
+
+    #portfolio, #grooming, #tech {        
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    footer {
+        clear: left;
+        font-size: 1.10em;
+    }
+    
+} /* end media query for desktop viewport */
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) 
+{
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+/* Media Query for Print */
+@media print 
+{
+    body {
+        background-color: #fff;
+        color: #000;
+    }
 }

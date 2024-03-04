@@ -1,0 +1,135 @@
+/*
+Author: firstName lastName
+Date: 01/01/2020
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body and images */
+body {
+    background-color: #e2eae2;
+}
+
+img {
+    max-width: 20%;
+    display: block;
+    border-radius: 50%;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    color: #364a36;
+    background-color: #98b497;
+}
+
+header h1 {
+    font-family: 'Coustard', serif;
+    padding: 5%;
+}
+
+header h3 {
+    font-size: 1em;
+    font-style: italic;
+    padding: 3%;
+    font-family: Georgia, Times, serif;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #132913;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    font-size: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+    border-top: 0.5px solid #98b497;
+}
+
+nav li a {
+    display: block;
+    color: #e2eae2;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+.link {
+    color: #364a36;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.map {
+    border: 4px solid #132913;
+    width: 95%;
+    height: 50%;
+}
+
+#contact {
+    text-align: center;
+}
+
+.tel-link {
+    background-color: #132913;
+    padding: 2%;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 115%;
+}
+
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.round {
+    border-radius: 15px;
+}
+
+main ul {
+    margin-left: 10%;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.75em;
+    background-color: #132913;
+    color: #e2eae2;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #e2eae2;
+    text-decoration: none;
+}

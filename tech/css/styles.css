@@ -1,0 +1,133 @@
+/*
+Authors: firstName lastName, firstName lastName, firstName lastName
+Date: 01/01/2020
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #417589;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule to hide tablet-desk */
+.tablet-desk {
+    display: none;
+}
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    color: #e3eef2;
+    padding: 1%;
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Merriweather', serif;
+}
+
+header h3 {
+    font-style: italic;
+    font-size: 1.25em;
+    font-family: Futura, Arial, sans-serif;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #213b45;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    font-size: 1.15em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+    border: 1px solid #e3eef2;
+    border-radius: 2px; 
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 3%;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #e3eef2;
+    font-family: 'Lato', sans-serif;
+}
+
+main h2 {
+    color: #213B45;
+}
+
+main p {
+    color: #0F252E;
+    font-size: 1.25em;
+}
+
+main a {
+    text-decoration: none;
+    color: #417589;
+    font-weight: bold;
+}
+
+main ul {
+    list-style-type: square;
+    font-size: 1.15em;
+}
+
+main ul li:last-child {
+    padding-bottom: 2%;
+}
+
+.action {
+    font-size: 1.25em;
+    color: #213b45;
+    font-weight: bold;
+    font-variant-caps: all-small-caps; 
+}
+
+.round {
+    border-radius: 7px;
+}
+
+#deep a {
+    color: #213b45;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.75em;
+    color: #e3eef2;
+    font-weight: bold;
+}
+
+footer a {
+    color: #e3eef2;
+    text-decoration: none;
+}
