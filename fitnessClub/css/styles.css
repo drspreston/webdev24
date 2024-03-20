@@ -308,6 +308,16 @@ footer p a {
         padding: 2%;
     }
 
+    th {
+        background-color: #000;
+        color: #fff;
+        font-size: 1.15em;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ccc;
+    }
+
 } /* end media for tablet min-width 630px */
 
 /* Media Query for Desktop Viewport */
