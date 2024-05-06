@@ -14,10 +14,26 @@ on 01/17/2024 -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"> 
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
 
     <div id="container">
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="classes.html">Classes</a>
+                <a href="nutrition.html">Nutrition</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
 
         <!-- Use the header area for the website name or logo -->
         <header>
@@ -45,8 +61,18 @@ on 01/17/2024 -->
 
         <!-- Use the footer area to add webpage footer content -->
         <footer>
-            <p>&copy; Copyright 2024. All Rights Reserved.</p>        
-            <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+            <div class="copyright">
+                <p>&copy; Copyright 2024. All Rights Reserved.</p>        
+                <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+                <p><a class="external-link" href="../index.html">Silvia's Webdev Page</a></p>
+            </div>
+
+            <div class="social">
+                <a href="https://www.facebook.com/fwdfitclub" target="_blank">
+                    <img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+                <a href="https://twitter.com/fwdfitclub" target="_blank">
+                    <img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+            </div>
         </footer>
 
     </div>  

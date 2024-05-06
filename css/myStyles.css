@@ -26,13 +26,12 @@ a {
 /* Style rule for header */
 header {
     top: 0;
-    padding: 5%;
-    text-align: center;
-    height: 120px;
+    height: 125px;
 }
 
-header h1 {    
-    margin: 3%;
+header img {
+    height: 125px;
+    width: 100%;
 }
 
 /* Style rules for navigation area */
@@ -98,6 +97,24 @@ main hr {
 .round {
     border-radius: 8px;
 }
+
+/* Table Styles */
+table {
+    border: 3px solid black;   
+    border-collapse: collapse;
+    background-color: #bda6a6;
+    width: 60%;
+}
+
+th {
+    border: 1px solid black;
+    font-size: 1.25em;
+}
+
+td {
+    border: 1px solid black;
+}
+
 
 /* Style rules for footer content */
 footer {

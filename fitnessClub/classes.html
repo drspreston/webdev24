@@ -3,9 +3,13 @@
 on 03/20/2024 -->
 <html lang="en">
 <head>
+    <title>Fitness Class Schedule | Forward Fitness Club</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forward Fitness Club</title>
+    <meta name="description" content="Forward Fitness Club has many fitness 
+        classes to meet your needs, including boot camp, cardio, kickboxing, 
+        spinning, yoga, and Zumba.">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -14,10 +18,26 @@ on 03/20/2024 -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"> 
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
 
     <div id="container">
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="classes.html">Classes</a>
+                <a href="nutrition.html">Nutrition</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
 
         <!-- Use the header area for the website name or logo -->
         <header>
@@ -107,12 +127,33 @@ on 03/20/2024 -->
                     </tr>
                 </table>
             </div>
+
+            <div id="music-sample">
+                <h3>We play upbeat music to help keep you focused during your workout. 
+                    Below is a sample of the type of music played during a class workout.</h3>
+                
+                <audio controls>                    
+                    <source src="media/ffc_audio.mp3" type="audio/mp3">
+                    <source src="media/ffc_audio.ogg" type="audio/ogg">
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+            </div>
         </main>
 
         <!-- Use the footer area to add webpage footer content -->
         <footer>
-            <p>&copy; Copyright 2024. All Rights Reserved.</p>        
-            <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+            <div class="copyright">
+                <p>&copy; Copyright 2024. All Rights Reserved.</p>        
+                <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+                <p><a class="external-link" href="../index.html">Silvia's Webdev Page</a></p>
+            </div>
+
+            <div class="social">
+                <a href="https://www.facebook.com/fwdfitclub" target="_blank">
+                    <img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+                <a href="https://twitter.com/fwdfitclub" target="_blank">
+                    <img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+            </div>
         </footer>
 
     </div>  
